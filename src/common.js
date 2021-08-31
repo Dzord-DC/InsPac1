@@ -3,7 +3,11 @@ export function errorForm(text) {
     ${text}
     </span>`
 }
-
+/**
+ * Функция удаляет класс со все страницы 
+ * 
+ * @param {string} className название класса
+ */
 export function dropping(className) {
     let activeMas = document.querySelectorAll(`.${className}`);
     activeMas.forEach((el) => {
