@@ -1,8 +1,15 @@
-import { formElement } from "./datecalc.js";
-import { formTimer } from "./timer.js";
+
 import { dropping } from "./common.js";
-const dateCalcBut = document.getElementById('dateCalc');
-const timetBut = document.getElementById('timer');
+
+const menuBut = document.querySelectorAll('.but-menu');
+const formElements = document.querySelectorAll('.form-set');
+
+// а здесь напишу переключаклу для множества форм
+for (let i = 0; i < menuBut.length; i++) {
+    menuBut[i].addEventListener('click', () => {
+        switching(menuBut[i], formElements[i]);
+    });
+}
 
 function switching(butActiv, form) {
     dropping('active');
@@ -10,10 +17,3 @@ function switching(butActiv, form) {
     butActiv.classList.add('active');
     form.classList.add('show');
 }
-
-dateCalcBut.addEventListener('click', () => {
-    switching(dateCalcBut, formElement);
-})
-timetBut.addEventListener('click', () => {
-    switching(timetBut, formTimer);
-})
