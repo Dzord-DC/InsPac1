@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style/style.css">
+    <script type="module" src='/src/main.js'></script>
+    <title>Приложение</title>
+</head>
+
+<body>
+    <div class="menu">
+        <a href="#" id="dateCalc" class="but-menu active">Калькулятор дат</a>
+        <a href="#" id="timer" class="but-menu">Таймер</a>
+    </div>
+
+    <form id="dateCalc-form" class="form-set show">
+        <label>
+            <strong>Первая дата</strong>
+            <input type="date" name="firstDate">
+        </label>
+        <label>
+            <strong>Вторая дата</strong>
+            <input type="date" name="secondDate">
+        </label>
+        <button>Расчитать</button>
+        <div id="dateCalc-result"></div>
+
+    </form>
+    <form id="timer-form" class="form-set">
+        <label>
+            <strong>Время</strong>
+            <input type="time" name="time" id="time">
+        </label>
+
+        <button id="start">Старт</button>
+        <button id="stop">Стоп</button>
+        <div id="time-v"></div>
+        <div id="message"></div>
+
+    </form>
+</body>
+
+</html>
