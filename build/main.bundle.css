@@ -1,0 +1,31 @@
+/*!*****************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/style.css ***!
+  \*****************************************************************/
+*{
+    margin: 0;
+    padding: 0;
+}
+.menu{
+    display: flex;
+}
+.but-menu{
+    display: block;
+    margin: 5px;
+    padding: 5px;
+    color: #000;
+    font-size: 20px;
+    text-decoration: none;
+    background-color: darkgrey;
+    border: solid 1px #000;
+}
+.active{
+    background-color: #fff;
+    border-bottom: none;
+}
+.form-set{
+    display: none;
+    margin: 10px;
+}
+.show{
+    display: block;
+}
